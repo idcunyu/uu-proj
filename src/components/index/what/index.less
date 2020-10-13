@@ -1,0 +1,138 @@
+.index-what {
+  background-color: #161415;
+  width: 100%;
+  height: 926px;
+  .pc {
+    display: block;
+  }
+  .wap {
+    display: none;
+  }
+  .index-what-all {
+    width: 1200px;
+    margin: 0px auto;
+    .index-what-content {
+      padding-top: 169px;
+      padding-left: 566px;
+      position: relative;
+      .what-pic {
+        width: 526px;
+        position: absolute;
+        top: 196px;
+        left: 0px;
+      }
+      .title {
+        color: #F35027;
+        font-size: 13px;
+        line-height: 15px;
+        margin-bottom: 20px;
+        letter-spacing: 2.44px;
+        font-family: 'RubikM';
+      }
+      .d1 {
+        font-weight: 500;
+        color: #F7F7F7;
+        font-size: 24px;
+        line-height: 34px;
+        margin-bottom: 12px;
+      }
+      .d2 {
+        font-weight: 400;
+        color: #8E8E8E;
+        line-height: 30px;
+        margin-bottom: 18px;
+      }
+      .a-item {
+        color: #8E8E8E;
+        font-size: 16px;
+        line-height: 30px;
+        height: 30px;
+        position: relative;
+        padding-left: 30px;
+        margin-bottom: 12px;
+        &::before {
+          content: '';
+          width: 24px;
+          height: 24px;
+          background: url('/assets/images/index/ic_check_clr.png') no-repeat;
+          background-size: 100% 100%;
+          position: absolute;
+          left: 1px;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 780px) {
+	.index-what {
+    height: auto;
+    .pc {
+      display: none;
+    }
+    .wap {
+      display: block;
+    }
+    .index-what-all {
+      width: 100%;
+      .index-what-content {
+        padding-top: 88vw;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 25vw;
+        position: relative;
+        .what-pic {
+          width: 62vw;
+          position: absolute;
+          top: 22vw;
+          left: 19vw;
+        }
+        .title {
+          color: #F35027;
+          font-size: 10px;
+          line-height: 12px;
+          margin-bottom: 10px;
+          letter-spacing: 1.88px;
+          font-family: 'RubikM';
+        }
+        .d1 {
+          font-weight: 500;
+          color: #F7F7F7;
+          font-size: 20px;
+          line-height: 24px;
+          margin-bottom: 10px;
+        }
+        .d2 {
+          font-weight: 400;
+          color: #8E8E8E;
+          font-size: 14px;
+          line-height: 30px;
+          margin-bottom: 6px;
+        }
+        .a-item {
+          color: #8E8E8E;
+          font-size: 14px;
+          line-height: 30px;
+          height: 30px;
+          position: relative;
+          padding-left: 30px;
+          margin-top: 12px;
+          margin-bottom: 0px;
+          &::before {
+            content: '';
+            width: 24px;
+            height: 24px;
+            background: url('/assets/images/index/ic_check_clr.png') no-repeat;
+            background-size: 100% 100%;
+            position: absolute;
+            left: 1px;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+        }
+      }
+    }
+	}
+}

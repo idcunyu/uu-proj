@@ -1,0 +1,461 @@
+.fund-cpt {
+  background-color: #181818;
+  width: 100%;
+  padding-bottom: 100px;
+  .pc {
+    display: block;
+  }
+  .wap {
+    display: none;
+  }
+  .fund-cpt-all {
+    width: 1200px;
+    margin: 0px auto;
+    padding-top: 130px;
+    .title {
+      text-align: center;
+      color: #F35027;
+      font-size: 13px;
+      margin-bottom: 20px;
+      margin-top: 55px;
+    }
+    .d1 {
+      color: #F7F7F7;
+      font-size: 42px;
+      text-align: center;
+      line-height: 55px;
+      font-weight: 500;
+      margin-bottom: 16px
+    }
+    .d2 {
+      color: #8E8E8E;
+      font-size: 16px;
+      line-height: 30px;
+      font-weight: 400;
+      text-align: center;
+      margin-bottom: 42px;
+    }
+    .boxs {
+      display: flex;
+      justify-content: center;
+      flex-wrap: nowrap;
+      .box {
+        width: 540px;
+        height: 280px;
+        border-radius: 4px;
+        box-sizing: border-box;
+        .desc {
+          line-height: 23px;
+          letter-spacing: 0.35px;
+          color: #fff;
+          font-weight: 500;
+        }
+        &.left {
+          background-color: #F35027;
+          margin-right: 40px;
+          padding: 40px 0px 0px 40px;
+          position: relative;
+          .time-wrap {
+            position: absolute;
+            left: 40px;
+            top: 116px;
+            .block {
+              box-sizing: border-box;
+              display: inline-block;
+              margin-right: 16px;
+              width: 82px;
+              height: 105px;
+              background-color: rgba(255, 255, 255, .11);
+              .num {
+                padding-top: 20px;
+                color: #fff;
+                text-align: center;
+                font-size: 32px;
+                line-height: 38px;
+                margin-bottom: 16px;
+              }
+              .dw {
+                color: #fff;
+                font-size: 13px;
+                text-align: center;
+              }
+            }
+          }
+        }
+        &.right {
+          background-color: #F8B33C;
+          padding: 40px 0px 0px 40px;
+          position: relative;
+          .umi-wrap {
+            position: absolute;
+            left: 40px;
+            top: 116px;
+            .block {
+              display: inline-block;
+              position: relative;
+              background-color: rgba(255, 255, 255, .11);
+              width: 194px;
+              height: 105px;
+              .num {
+                text-align: center;
+                font-size: 32px;
+                font-weight: 500;
+                color: #F7F7F7;
+                line-height: 38px;
+                padding-top: 21px;
+                margin-bottom: 15px;
+              }
+              .status {
+                text-align: center;
+                font-size: 13px;
+                color: #fff;
+                line-height: 15px;
+              }
+              &:first-of-type {
+                margin-right: 41px;
+                &::after {
+                  content: '';
+                  width: 19px;
+                  height : 51px;
+                  background: url('/assets/images/fund/fund-line.png') no-repeat;
+                  background-size: contain;
+                  position: absolute;
+                  right: -30px;
+                  top: 50%;
+                  transform: translateY(-50%);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .purchase-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-wrap: nowrap;
+      margin-top: 100px;
+      .ant-input-affix-wrapper {
+        background-color: #fff;
+        height: 56px;
+        width: 400px;
+        border-radius: 28px;
+        position: relative;
+        .ant-input {
+          width: 80%;
+          color: #000;
+          font-size: 24px;
+          line-height: 30px;
+          height: 30px;
+          position: absolute;
+          left: 26px;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+        .ant-input-suffix {
+          font-size: 24px;
+          color: #DEDEDE;
+          height: 30px;
+          line-height: 30px;
+          position: absolute;
+          right: 18px;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+      .show-purchase {
+        margin-top: 18px;
+        font-size: 16px;
+        color: #8E8E8E;
+        text-align: center;
+        span {
+          color: #F35027;
+        }
+      }
+      .purchase-btn {
+        margin-top: 54px;
+        margin-bottom: 80px;
+        width: 200px;
+        height: 56px;
+        border-radius: 28px;
+        font-size: 16px;
+        color: #fff;
+        font-weight: bold;
+        line-height: 56px;
+        text-align: center;
+        padding: 0px;
+      }
+    }
+    .more {
+      max-width: 430px;
+      max-width: max-content;
+      height: 46px;
+      background: #000000;
+      border-radius: 23px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 0px 16px 0px 0px;
+      margin: 0px auto;
+      .promo {
+        height: 46px;
+      }
+      .content {
+        color: #8E8E8E;
+        font-size: 12px;
+        line-height: 17px;
+        margin: 0px 13px 0px 10px;
+        .ctt {
+          a {
+            position: relative;
+            color: #fff;
+            &::after {
+              content: '';
+              width: 100%;
+              height: 1px;
+              background-color: #C9C9C9;
+              position: absolute;
+              bottom: -3px;
+              left: 0px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 780px) {
+	.fund-cpt {
+    height: auto;
+    padding-bottom: 0px;
+    .pc {
+      display: none;
+    }
+    .wap {
+      display: block;
+    }
+    .fund-cpt-all {
+      box-sizing: border-box;
+      width: 100%;
+      padding: 58px 20px;
+      .title {
+        text-align: center;
+        color: #F35027;
+        font-size: 10px;
+        margin-bottom: 26px;
+        margin-top: 55px;
+      }
+      .d1 {
+        font-size: 24px;
+        line-height: 55px;
+        font-weight: 500;
+        margin-bottom: 11px
+      }
+      .d2 {
+        color: #8E8E8E;
+        font-size: 14px;
+        line-height: 30px;
+        font-weight: 400;
+        text-align: center;
+        margin-bottom: 58px;
+      }
+      .boxs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
+        box-sizing: border-box;
+        .box {
+          width: 100%;
+          height: 174px;
+          border-radius: 4px;
+          box-sizing: border-box;
+          .desc {
+            font-size: 14px;
+            line-height: 23px;
+            letter-spacing: 0.35px;
+            color: #fff;
+            font-weight: 500;
+          }
+          &.left {
+            background-color: #F35027;
+            margin-right: 0px;
+            padding: 15px 0px 0px 15px;
+            position: relative;
+            margin-bottom: 20px;
+            .time-wrap {
+              position: absolute;
+              left: 15px;
+              top: 68px;
+              display: flex;
+              flex-wrap: nowrap;
+              .block {
+                box-sizing: border-box;
+                display: inline-block;
+                margin-right: 13px;
+                width: 67px;
+                height: 86px;
+                background-color: rgba(255, 255, 255, .11);
+                .num {
+                  padding-top: 20px;
+                  color: #fff;
+                  text-align: center;
+                  font-size: 24px;
+                  line-height: 28px;
+                  margin-bottom: 14px;
+                }
+                .dw {
+                  color: #fff;
+                  font-size: 11px;
+                  text-align: center;
+                }
+              }
+            }
+          }
+          &.right {
+            background-color: #F8B33C;
+            padding: 15px 0px 0px 15px;
+            position: relative;
+            .umi-wrap {
+              position: absolute;
+              left: 15px;
+              top: 68px;
+              display: flex;
+              flex-wrap: nowrap;
+              .block {
+                display: inline-block;
+                position: relative;
+                background-color: rgba(255, 255, 255, .11);
+                width: 136px;
+                height: 86px;
+                .num {
+                  text-align: center;
+                  font-size: 24px;
+                  font-weight: 500;
+                  color: #F7F7F7;
+                  line-height: 28px;
+                  padding-top: 16px;
+                  margin-bottom: 12px;
+                }
+                .status {
+                  text-align: center;
+                  font-size: 11px;
+                  color: #fff;
+                  line-height: 13px;
+                }
+                &:first-of-type {
+                  margin-right: 30px;
+                  &::after {
+                    content: '';
+                    width: 15px;
+                    height : 36px;
+                    background: url('/assets/images/fund/fund-line.png') no-repeat;
+                    background-size: contain;
+                    position: absolute;
+                    right: -23px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .purchase-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
+        margin-top: 100px;
+        .ant-input-affix-wrapper {
+          background-color: #fff;
+          height: 45px;
+          width: 100%;
+          border-radius: 23px;
+          position: relative;
+          .ant-input {
+            width: 80%;
+            color: #000;
+            font-size: 24px;
+            line-height: 30px;
+            height: 30px;
+            position: absolute;
+            left: 26px;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+          .ant-input-suffix {
+            font-size: 24px;
+            color: #DEDEDE;
+            height: 30px;
+            line-height: 30px;
+            position: absolute;
+            right: 18px;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+        }
+        .show-purchase {
+          margin-top: 28px;
+          font-size: 14px;
+          color: #8E8E8E;
+          text-align: center;
+          span {
+            color: #F35027;
+          }
+        }
+        .purchase-btn {
+          margin-top: 38px;
+          margin-bottom: 60px;
+          width: 200px;
+          height: 40px;
+          border-radius: 20px;
+          font-size: 14px;
+          color: #fff;
+          font-weight: bold;
+          line-height: 40px;
+          text-align: center;
+          padding: 0px;
+        }
+      }
+      .more {
+        width: 100%;
+        height: auto;
+        background: #000000;
+        border-radius: 23px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 6px 18px 6px 8px;
+        margin: 0px auto;
+        .promo {
+          height: 22px;
+        }
+        .content {
+          color: #8E8E8E;
+          font-size: 12px;
+          line-height: 17px;
+          margin: 0px 13px 0px 10px;
+          .ctt {
+            a {
+              position: relative;
+              color: #fff;
+              &::after {
+                content: '';
+                width: 100%;
+                height: 1px;
+                background-color: #C9C9C9;
+                position: absolute;
+                bottom: -3px;
+                left: 0px;
+              }
+            }
+          }
+        }
+      }
+    }
+	}
+}

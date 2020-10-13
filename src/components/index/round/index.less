@@ -1,0 +1,190 @@
+.index-round {
+  background-color: #161415;
+  width: 100%;
+  height: 1092px;
+  .pc {
+    display: block;
+  }
+  .wap {
+    display: none;
+  }
+  .index-round-all {
+    background: url('/assets/images/index/bg_home_worldmap.png') no-repeat;
+    background-size: 1063px 539px;
+    background-position: center 278px;
+    width: 1200px;
+    height: 1092px;
+    margin: 0px auto;
+    .title {
+      padding-top: 107px;
+      text-align: center;
+      color: #F35027;
+      font-size: 13px;
+      margin-bottom: 20px;
+    }
+    .d1 {
+      color: #F7F7F7;
+      font-size: 24px;
+      text-align: center;
+      line-height: 28px;
+      font-weight: 500;
+      margin-bottom: 16px
+    }
+    .d2 {
+      color: #8E8E8E;
+      font-size: 16px;
+      line-height: 30px;
+      font-weight: 400;
+      text-align: center;
+      margin-bottom: 70px;
+    }
+    .round-list {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      .round-item {
+        position: relative;
+        box-sizing: border-box;
+        width: 325px;
+        margin-right: 77px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        padding-top: 27px;
+        &:nth-of-type(3n+3) {
+          margin-right: 0px;
+        }
+        .round-pic {
+          width: 45px;
+          height: 47px;
+          z-index: 1;
+          position: absolute;
+          top: 0px;
+          left: 0px;
+        }
+        .round-stage {
+          font-size: 13px;
+          font-weight: 500;
+          color: #F35027;
+          line-height: 15px;
+          letter-spacing: 2px;
+          z-index: 2;
+          margin-bottom: 6px;
+        }
+        .round-title {
+          color: #fff;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 19px;
+          letter-spacing: 1.2px;
+          z-index: 2;
+          margin-bottom: 6px;
+        }
+        .round-desc {
+          font-size: 16px;
+          font-weight: 400;
+          color: #8E8E8E;
+          line-height: 30px;
+        }
+
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 780px) {
+	.index-round {
+    height: auto;
+    .pc {
+      display: none;
+    }
+    .wap {
+      display: block;
+    }
+    .index-round-all {
+      background: url('/assets/images/index/bg_home_worldmap.png') no-repeat;
+      background-size: 100%;
+      background-position: center 278px;
+      width: 100%;
+      height: auto;
+      box-sizing: border-box;
+      padding: 0px 20px 20vw 20px;
+      .title {
+        text-align: center;
+        color: #F35027;
+        font-size: 10px;
+        line-height: 12px;
+        letter-spacing: 1.88px;
+        margin-bottom: 10px;
+      }
+      .d1 {
+        color: #F7F7F7;
+        font-size: 20px;
+        text-align: center;
+        line-height: 24px;
+        font-weight: 500;
+        margin-bottom: 10px
+      }
+      .d2 {
+        color: #8E8E8E;
+        font-size: 14px;
+        line-height: 30px;
+        font-weight: 400;
+        text-align: center;
+        margin-bottom: 33px;
+      }
+      .round-list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        .round-item {
+          position: relative;
+          box-sizing: border-box;
+          width: 100%;
+          margin-right: 0px;
+          display: flex;
+          flex-direction: column;
+          flex-wrap: nowrap;
+          padding-top: 27px;
+          margin-top: 20px;
+          &:nth-of-type(3n+3) {
+            margin-right: 0px;
+          }
+          .round-pic {
+            width: 45px;
+            height: 47px;
+            z-index: 1;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+          }
+          .round-stage {
+            font-size: 10px;
+            font-weight: 500;
+            color: #F35027;
+            line-height: 12px;
+            letter-spacing: 1.88px;
+            z-index: 2;
+            margin-bottom: 4px;
+          }
+          .round-title {
+            color: #fff;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 19px;
+            letter-spacing: 1.2px;
+            z-index: 2;
+            margin-bottom: 6px;
+          }
+          .round-desc {
+            font-size: 14px;
+            font-weight: 400;
+            color: #8E8E8E;
+            line-height: 30px;
+          }
+  
+        }
+      }
+    }
+	}
+}

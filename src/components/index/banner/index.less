@@ -1,0 +1,167 @@
+.index-banner {
+  background: url('/assets/images/index/bg_home_banner1.png');
+  background-size: cover;
+  width: 100%;
+  height: 845px;
+  .index-banner-all {
+    width: 1200px;
+    margin: 0px auto;
+    padding-bottom: 40px;
+    .slogan {
+      margin-top: 250px;
+      width: 912px;
+    }
+    .desc {
+      color: #8E8E8E;
+      font-size: 22px;
+      line-height: 48px;
+      margin-top: 25px;
+      margin-bottom: 78px;
+    }
+    .btns {
+      overflow: hidden;
+      .btn {
+        display: inline-block;
+        width: 216px;
+        height: 52px;
+        line-height: 52px;
+        position: relative;
+        border-radius: 28px;
+        color: #fff;
+        font-size: 16px;
+        font-family: 'RubikB';
+        text-align: center;
+        background-color: transparent;
+        &::after {
+          content: '';
+          width: 20px;
+          height: 14px;
+          background: url('/assets/images/index/ic_btn_arrowright.png') no-repeat;
+          background-size: contain;
+          position: absolute;
+          right: 30px;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+        &.left-btn {
+          border: 2px solid #F35027;
+          background-color: #F35027;
+          margin-right: 40px;
+        }
+        &.right-btn {
+          border: 2px solid #D0D0D0;
+        }
+      }
+    }
+    .more {
+      margin-top: 121px;
+      max-width: 430px;
+      max-width: max-content;
+      height: 33px;
+      background: #000000;
+      border-radius: 17px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 0px 16px 0px 0px;
+      .promo {
+        height: 33px;
+      }
+      .content {
+        color: #8E8E8E;
+        font-size: 12px;
+        line-height: 17px;
+        margin: 0px 13px 0px 10px;
+      }
+      .detail {
+        color: #fff;
+        font-size: 12px;
+        line-height: 14px;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 780px) {
+	.index-banner {
+    background: url('/assets/images/index/bg_home_banner2.png');
+    background-size: 100%;
+    height: auto;
+    .index-banner-all {
+      box-sizing: border-box;
+      width: 100%;
+      padding-left: 20px;
+      padding-bottom: 7.6vw;
+      .slogan {
+        margin-top: 17vw;
+        width: 60vw;
+      }
+      .desc {
+        color: #8E8E8E;
+        font-size: 13px;
+        line-height: 15px;
+        margin-top: 2vw;
+        margin-bottom: 5.2vw;
+      }
+      .btns {
+        overflow: hidden;
+        .btn {
+          box-sizing: border-box;
+          display: inline-block;
+          width: 122px;
+          height: 32px;
+          line-height: 28px;
+          position: relative;
+          border-radius: 16px;
+          font-size: 12px;
+          &::after {
+            content: '';
+            width: 16px;
+            height: 7px;
+            right: 4px;
+          }
+          &.left-btn {
+            border: 2px solid #F35027;
+            background-color: #F35027;
+            margin-right: 17px;
+          }
+          &.right-btn {
+            border: 2px solid #D0D0D0;
+          }
+        }
+      }
+      .more {
+        margin-top: 8.5vw;
+        width: 396px;
+        // max-width: max-content;
+        height: 34px;
+        background: #000000;
+        border-radius: 17px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: nowrap;
+        padding: 0px 10px 0px 0px;
+        transform: scale(0.72);
+        transform-origin: left center;
+        .promo {
+          height: 34px;
+        }
+        .content {
+          color: #8E8E8E;
+          font-size: 9px;
+          line-height: 17px;
+          margin: 0px 5px 0px 2px;
+          white-space: nowrap;
+        }
+        .detail {
+          color: #fff;
+          font-size: 9px;
+          line-height: 10px;
+          text-decoration: underline;
+        }
+      }
+    }
+	}
+}
